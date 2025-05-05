@@ -77,6 +77,10 @@ For available endpoints and detailed API usage, refer to the Swagger documentati
 
 The application caches the results for 60 minutes to improve performance. If you need to clear the cache, you can do so by restarting the application.
 
+The application dynamically selects the appropriate DepartureProvider based on the provider.type property,
+allowing seamless switching between Excel, Database, and OpenSky API without modifying core logic.
+If no provider is specified, OpenSky API is used by default.
+
 The application returns HTTP status messages in Czech language to provide user-friendly responses in Postman and other API testing tools.
 
 Ensure that your API client supports UTF-8 encoding for proper text display.

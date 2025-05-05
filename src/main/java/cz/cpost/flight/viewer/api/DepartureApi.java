@@ -45,16 +45,6 @@ public class DepartureApi {
             return new ResponseEntity("Chyba: Požadavek přesahuje povolených 7 dnů!", HttpStatus.BAD_REQUEST);
         }
 
-        // Slower variant
-        /*List<Departure> departures = departureService.getDepartures(
-                airport,
-                String.valueOf(begin.atZone(ZoneId.of("Europe/Prague")).toEpochSecond()),
-                String.valueOf(end.atZone(ZoneId.of("Europe/Prague")).toEpochSecond())
-        );
-
-        return ResponseEntity.ok(departures);*/
-
-        // Faster variant
         Mono<List<Departure>> departures = departureService.getDepartures(
                 airport,
                 String.valueOf(begin.atZone(ZoneId.of("Europe/Prague")).toEpochSecond()),
