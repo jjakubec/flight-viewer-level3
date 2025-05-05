@@ -12,8 +12,8 @@
     <artifactId>flight-viewer-level3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>flight-viewer-level1</name>
-    <description>flight-viewer-level1</description>
+    <name>flight-viewer-level3</name>
+    <description>flight-viewer-level3</description>
     <url/>
     <licenses>
         <license/>
